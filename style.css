@@ -14,7 +14,7 @@ html {
 
 /* Header */
 header {
-    background: cadetblue;
+    background: rgb(3, 59, 61);
     color: white;
     padding: 20px;
     text-align: center;
@@ -28,7 +28,7 @@ nav a {
 }
 
 nav a:hover {
-    color: cadetblue;
+    color: rgb(231, 197, 170);
 }
 
 
@@ -58,7 +58,7 @@ nav a:hover {
 }
 
 .profile-content h2 {
-    color: cadetblue;
+    color: rgb(4, 100, 102);
 }
 
 .profile-content h3 {
@@ -119,7 +119,7 @@ nav a:hover {
 
 .skill-card {
     width: 250px;
-    background: antiquewhite;
+    background: rgb(222, 243, 247);
     padding: 20px;
     border-radius: 20px;
     box-shadow: 0 4px 10px gray;
@@ -161,10 +161,10 @@ nav a:hover {
 
 .projects-allcards {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    gap: 50px;
+    gap: 30px;
 }
-
 .projects-card {
     width: 800px;
     max-width: 90%;
@@ -176,22 +176,38 @@ nav a:hover {
     
 }
 
+
 .projects-card h3 {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    margin: 0 0 5px 10px;
+    margin: 0 0 20px 0;
     display: flex;
-    align-items: center;
-    gap: 10px;
+    align-items: flex-start;
+    gap: 12px;
+    font-size: 20px;
+    text-align: center;
+  
 }
 
-.projects-card p {
-    margin-left: 10px;
-    line-height: 1.5;
+.projects-card h3 i {
+    font-size: 25px;
+    flex-shrink: 0;
+    margin-top: 5px;
+    padding: 0;
+    
 }
 
+.projects-card h3 span {
+    flex: 1;
+    line-height: 1.3;
+    padding-top:30px;
+    margin-left:-25px;
+    
+    
+}
 .projects-card i {
     font-size: 30px;
     color: rgb(119, 101, 88);
+    
+  
 }
 
 
