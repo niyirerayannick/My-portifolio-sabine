@@ -1,141 +1,171 @@
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><i class="fa-solid fa-code"></i>portifolio</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Sabine | QA Engineer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="background-blobs" aria-hidden="true">
+        <span class="blob blob-1"></span>
+        <span class="blob blob-2"></span>
+        <span class="blob blob-3"></span>
+    </div>
 
-    <header>
-        <h1>My QA Journey</h1>
-
-    <nav>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-    </nav>
+    <header class="site-header">
+        <a class="brand" href="#home">Sabine QA</a>
+        <nav class="main-nav">
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <a class="nav-cta" href="https://wa.me/250792040262" target="_blank" rel="noopener">
+            <i class="fa-brands fa-whatsapp"></i>
+            WhatsApp
+        </a>
     </header>
 
-    <section id="profile">
-    <div class="profile-content">
-        <img src="fiver-profile.jpeg" alt="Profile picture">
-
-        <div>
-            <h1>Ingabire Ziza Sabine</h1>
-            <h3>ISTQB® Certified Tester | QA Engineer | Software Testing Enthusiast</h3>
-            <h2>About Me</h2>
-        <p>
-                I am a software tester passionate about ensuring quality 
-                through manual testing and test automation. I have experience 
-                with Selenium, Playwright, API testing, and creating reliable 
-                testing solutions.
-            </p>
-
-
-
-        </div>
-    </div>
-
-    <section id="skills">
-    <h2>My Skills</h2>
-
-    <div class="skills-container">
-
-        <div class="skill-card">
-            
-            <h3><i class="fa-solid fa-vial"></i>Manual Testing</h3>
-            <p>Test cases, test plans, bug reporting, and test execution.</p>
-        </div>
-
-        <div class="skill-card">
-            
-            <h3> <i class="fa-solid fa-robot"></i>Automation Testing</h3>
-            <p>Selenium, Playwright, Cucumber, and TestNG.</p>
-        </div>
-
-        <div class="skill-card">
-        
-            <h3><i class="fa-solid fa-server"></i> API Testing</h3>
-            <p>Postman, REST API testing, and validation.</p>
-        </div>
-
-        <div class="skill-card">
-            
-            <h3><i class="fa-solid fa-code"></i> Programming</h3>
-            <p>Java, JavaScript, HTML, CSS, and SQL.</p>
-        </div>
-
-    </div>
-    <section id="projects">
-        
-        <h2> <i class="fa-solid fa-vial"></i>My Projects</h2>
-          <div class="projects-allcards">
-            <div class="projects-card">
-            
-            <h3> <i class="fa-solid fa-cart-shopping"></i>
-                <span>Askomdch website</span>
-            </h3>
-            <p>A commercial website for selling clothes</p>
-            <div class="project-card">
-
-    <ul>
-        <li>Designed and executed manual test cases.</li>
-        <li>Performed functional testing of key user features.</li>
-        <li>Automated web tests using Selenium WebDriver.</li>
-        <li>Created BDD test scenarios with Cucumber.</li>
-        <li>Tested REST APIs using Postman.</li>
-        <li>Reported and tracked defects.</li>
-    </ul>
-</div>
+    <main id="home">
+        <section id="about" class="hero section">
+            <div class="hero-media reveal reveal-left floating-media">
+                <img src="fiver-profile.jpeg" alt="Portrait of Ingabire Ziza Sabine">
             </div>
-            <div class="projects-card">
-            <h3><i class="fa-solid fa-cart-shopping"></i>
-                <span>Think&And-getIt Project</span>
-            </h3>
-            <p>Selenium automation framework using Java.</p>
-    <ul>
-    <li>Performed API testing to validate backend functionality and response accuracy.</li>
-    <li>Tested REST API endpoints using Postman, including authentication, user management, and product operations.</li>
-    <li>Verified HTTP methods, status codes, response data, and API behavior.</li>
-    <li>Validated API requests using tokens and authentication flows.</li>
-    <li>Identified and reported API defects to improve system reliability.</li>
-</ul>
-        </div>
-          </div>
-</section>
 
- <section id="contact">
-    <h2>Let's Connect</h2>
+            <div class="hero-copy reveal reveal-right">
+                <p class="eyebrow reveal reveal-zoom">ISTQB Certified Tester</p>
+                <h1>Ingabire Ziza Sabine</h1>
+                <h2>QA Engineer focused on dependable quality and fast, clear feedback loops.</h2>
+                <p>
+                    I am passionate about building confidence in software through manual testing,
+                    automation, and API verification. I create practical test strategies that reduce
+                    defects and improve release reliability.
+                </p>
 
-    <form>
-        <input type="text" placeholder="Your Name" required>
+                <div class="hero-actions">
+                    <a class="btn btn-primary" href="#contact">Start a Conversation</a>
+                    <a class="btn btn-secondary" href="https://wa.me/250792040262?text=Hello%20Sabine%2C%20I%20would%20like%20to%20connect%20about%20QA%20services." target="_blank" rel="noopener">
+                        <i class="fa-brands fa-whatsapp pulse-icon"></i>
+                        Chat on WhatsApp
+                    </a>
+                </div>
+            </div>
+        </section>
 
-        <input type="email" placeholder="Your Email" required>
+        <section id="skills" class="section">
+            <div class="section-head reveal reveal-up">
+                <p>Core Expertise</p>
+                <h2>Skills That Keep Products Stable</h2>
+            </div>
 
-        <textarea placeholder="Write your message..." rows="6" required></textarea>
+            <div class="skills-grid">
+                <article class="skill-card reveal reveal-up tilt-card">
+                    <i class="fa-solid fa-vial"></i>
+                    <h3>Manual Testing</h3>
+                    <p>Test plans, exploratory sessions, defect reporting, and complete test execution.</p>
+                </article>
 
-        <button type="submit">Send Message</button>
-    </form>
-</section>
-        
+                <article class="skill-card reveal reveal-up tilt-card">
+                    <i class="fa-solid fa-robot"></i>
+                    <h3>Automation Testing</h3>
+                    <p>Selenium, Playwright, Cucumber, and TestNG for maintainable regression coverage.</p>
+                </article>
 
-    <section>
-    <h2>Contact Me</h2>
-    <div id="contact-info">
+                <article class="skill-card reveal reveal-up tilt-card">
+                    <i class="fa-solid fa-server"></i>
+                    <h3>API Testing</h3>
+                    <p>Postman-based REST validation, authentication checks, and response integrity testing.</p>
+                </article>
 
-    <p> <i class="fa-solid fa-envelope"></i>ingabirezizas@gmail.com</p>
-    <p> <i class="fa-solid fa-phone"></i>+250 792040262</p>
-    <p> <i class="fa-brands fa-linkedin"></i>www.linkedin.com/in/ziza-sabine-ingabire-a3b398405</p>
-</div>
+                <article class="skill-card reveal reveal-up tilt-card">
+                    <i class="fa-solid fa-code"></i>
+                    <h3>Programming</h3>
+                    <p>Java, JavaScript, SQL, HTML, and CSS for both test automation and frontend quality checks.</p>
+                </article>
+            </div>
+        </section>
 
- 
+        <section id="projects" class="section">
+            <div class="section-head reveal reveal-up">
+                <p>Recent Work</p>
+                <h2>Projects I Have Tested</h2>
+            </div>
 
-    </section>
+            <div class="projects-grid">
+                <article class="project-card reveal reveal-left tilt-card">
+                    <h3><i class="fa-solid fa-cart-shopping"></i> Askomdch Website</h3>
+                    <p>A commercial ecommerce website for selling clothes.</p>
+                    <ul>
+                        <li>Designed and executed manual test cases.</li>
+                        <li>Performed functional testing of key user features.</li>
+                        <li>Automated web tests using Selenium WebDriver.</li>
+                        <li>Created BDD test scenarios with Cucumber.</li>
+                        <li>Tested REST APIs using Postman.</li>
+                        <li>Reported and tracked defects for faster fixes.</li>
+                    </ul>
+                </article>
 
-    
+                <article class="project-card reveal reveal-right tilt-card">
+                    <h3><i class="fa-solid fa-bag-shopping"></i> Think &amp; GetIt Project</h3>
+                    <p>Selenium automation framework with backend API validation.</p>
+                    <ul>
+                        <li>Performed API testing for backend functionality and response accuracy.</li>
+                        <li>Tested endpoint flows for authentication, users, and products.</li>
+                        <li>Verified HTTP methods, status codes, and response data structure.</li>
+                        <li>Validated token-based request behavior and auth flows.</li>
+                        <li>Identified and reported API defects to improve reliability.</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <section id="contact" class="section contact">
+            <div class="section-head reveal reveal-up">
+                <p>Contact</p>
+                <h2>Let Us Connect</h2>
+            </div>
+
+            <div class="contact-layout">
+                <div class="contact-card reveal reveal-left tilt-card">
+                    <h3>Direct Contact</h3>
+                    <p><i class="fa-solid fa-envelope"></i> ingabirezizas@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> +250 792 040 262</p>
+                    <p><i class="fa-brands fa-linkedin"></i> linkedin.com/in/ziza-sabine-ingabire-a3b398405</p>
+                    <a class="btn btn-whatsapp" href="https://wa.me/250792040262?text=Hello%20Sabine%2C%20I%20am%20interested%20in%20your%20QA%20services." target="_blank" rel="noopener">
+                        <i class="fa-brands fa-whatsapp pulse-icon"></i>
+                        Open WhatsApp Chat
+                    </a>
+                </div>
+
+                <form id="contactForm" class="contact-form reveal reveal-right tilt-card">
+                    <label for="name">Your Name</label>
+                    <input id="name" name="name" type="text" placeholder="Enter your name" required>
+
+                    <label for="email">Your Email</label>
+                    <input id="email" name="email" type="email" placeholder="Enter your email" required>
+
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="6" placeholder="Write your message..." required></textarea>
+
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        Send to WhatsApp
+                    </button>
+                    <small class="form-note">The message will open in WhatsApp ready to send.</small>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; <span id="year"></span> Ingabire Ziza Sabine | QA Engineer</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
