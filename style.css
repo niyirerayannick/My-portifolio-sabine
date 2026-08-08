@@ -402,6 +402,49 @@ main {
     color: var(--accent);
 }
 
+.social-links {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.social-link {
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 999px;
+    background: #fff;
+    border: 1px solid var(--line);
+    color: var(--text);
+    transition: transform 0.25s ease, box-shadow 0.25s ease, color 0.25s ease, background 0.25s ease;
+}
+
+.social-link:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 10px 18px rgba(31, 41, 55, 0.18);
+}
+
+.social-link.facebook:hover {
+    background: #1877f2;
+    border-color: #1877f2;
+    color: #fff;
+}
+
+.social-link.linkedin:hover {
+    background: #0a66c2;
+    border-color: #0a66c2;
+    color: #fff;
+}
+
+.social-link.instagram:hover {
+    background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af);
+    border-color: #dd2a7b;
+    color: #fff;
+}
+
 .contact-form {
     display: flex;
     flex-direction: column;
